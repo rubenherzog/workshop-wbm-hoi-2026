@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: "Source Sans 3", sans-serif;
   color: var(--ink);
@@ -32,6 +33,23 @@ body {
     radial-gradient(circle at top left, rgba(63, 111, 152, 0.16), transparent 30%),
     linear-gradient(180deg, #f4f7fa 0%, var(--bg) 100%);
   line-height: 1.55;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("images/hois.png") center center / cover no-repeat;
+  opacity: 0.09;
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -120,10 +138,26 @@ img {
 }
 
 .hero-copy {
+  position: relative;
   padding: clamp(0.8rem, 2vw, 1.5rem) clamp(2rem, 4vw, 4rem) clamp(2rem, 4vw, 4rem) clamp(2rem, 4vw, 4rem);
   border-radius: calc(var(--radius-lg) + 8px);
   background: linear-gradient(160deg, rgba(252, 253, 255, 0.96), rgba(239, 244, 248, 0.9));
   color: #142533;
+}
+
+.hero-copy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/wbm.png") center bottom / contain no-repeat;
+  opacity: 0.09;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.hero-copy > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-panel {
@@ -190,7 +224,7 @@ h3 {
 .card p,
 .programme-copy p,
 .footer-wrap p {
-  font-size: 1.08rem;
+  font-size: calc(1.08rem + 2pt);
 }
 
 .hero-actions {
@@ -283,9 +317,25 @@ h3 {
 /* ── Logos section ── */
 
 .logos-section {
+  position: relative;
   padding: 2.5rem 0 2.5rem;
   border-bottom: 1px solid var(--line);
   background: rgba(250, 252, 255, 0.6);
+  overflow: hidden;
+}
+
+.logos-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/725236_IconesGuiaBenvinguda4-UIB.jpg") center center / min(216vw, 2280px) no-repeat;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.logos-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .logos-row {
@@ -458,6 +508,7 @@ h3 {
 
 .programme-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   background: var(--surface-strong);
   font-size: 0.98rem;
@@ -491,11 +542,38 @@ h3 {
   width: 112px;
 }
 
+.programme-table th:nth-child(2),
+.programme-table td:nth-child(2) {
+  width: 28.5%;
+}
+
+.programme-table th:nth-child(3),
+.programme-table td:nth-child(3) {
+  width: 28.5%;
+}
+
+.programme-table th:nth-child(4),
+.programme-table td:nth-child(4) {
+  width: 28.5%;
+}
+
 .programme-table td {
   padding: 0.9rem 1.1rem;
   vertical-align: top;
   border-top: 1px solid var(--line);
   line-height: 1.45;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.programme-table th:nth-child(2),
+.programme-table td:nth-child(2) {
+  padding-right: 0.25rem;
+}
+
+.programme-table th:nth-child(3),
+.programme-table td:nth-child(3) {
+  padding-left: 0.25rem;
 }
 
 .programme-table tbody tr:hover {
