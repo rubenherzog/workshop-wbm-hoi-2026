@@ -433,6 +433,12 @@ h3 {
   gap: 1.5rem;
 }
 
+.speakers-grid .speaker-card:nth-child(5) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 54%);
+}
+
 .speaker-card {
   display: flex;
   flex-direction: column;
@@ -646,6 +652,10 @@ h3 {
 
   .speakers-grid {
     grid-template-columns: 1fr;
+  }
+
+  .speakers-grid .speaker-card:nth-child(5) {
+    width: 100%;
   }
 
   #about .section-content {
