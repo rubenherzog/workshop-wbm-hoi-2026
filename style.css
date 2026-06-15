@@ -430,13 +430,13 @@ h3 {
 .speakers-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.1rem;
 }
 
-.speakers-grid .speaker-card:nth-child(5) {
+.speakers-grid .speaker-card:nth-child(9) {
   grid-column: 1 / -1;
   justify-self: center;
-  width: min(100%, 54%);
+  width: min(100%, 52%);
 }
 
 .speaker-card {
@@ -444,7 +444,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem 1.75rem 1.75rem;
+  padding: 1.45rem 1.35rem 1.3rem;
   border-radius: var(--radius-md);
   background: var(--surface);
   border: 1px solid var(--line);
@@ -453,13 +453,13 @@ h3 {
 }
 
 .speaker-photo {
-  width: 120px;
-  height: 120px;
+  width: 106px;
+  height: 106px;
   border-radius: 50%;
   overflow: hidden;
   flex: 0 0 auto;
   background: var(--bg-soft);
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.85rem;
   box-shadow: 0 4px 16px rgba(32, 51, 66, 0.12);
 }
 
@@ -471,9 +471,9 @@ h3 {
 
 .speaker-name {
   font-family: "Fraunces", serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.15rem;
   line-height: 1.15;
 }
 
@@ -489,17 +489,17 @@ h3 {
 }
 
 .speaker-affiliation {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--accent);
   font-weight: 600;
-  margin: 0 0 1rem;
+  margin: 0 0 0.65rem;
 }
 
 .speaker-bio {
-  font-size: 0.97rem;
+  font-size: 0.92rem;
   color: var(--ink-soft);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.45;
   text-align: left;
 }
 
@@ -657,7 +657,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .speakers-grid .speaker-card:nth-child(5) {
+  .speakers-grid .speaker-card:nth-child(9) {
     width: 100%;
   }
 
