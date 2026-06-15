@@ -503,6 +503,10 @@ h3 {
   text-align: left;
 }
 
+.speaker-card:nth-child(9) .speaker-affiliation {
+  white-space: pre-line;
+}
+
 /* ── Programme table ── */
 
 .programme-table-wrap {
@@ -568,6 +572,22 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.programme-table .row-span-4 td,
+.programme-table .row-span-3 td {
+  text-align: center;
+}
+
+.programme-table .row-span-4 td[colspan],
+.programme-table .row-span-3 td[colspan] {
+  text-align: center;
+  font-weight: 600;
+}
+
+.programme-table .row-span-4 td:not(.time-cell),
+.programme-table .row-span-3 td:not(.time-cell) {
+  vertical-align: middle;
+}
+
 .programme-table th:nth-child(2),
 .programme-table td:nth-child(2) {
   padding-right: 0.25rem;
@@ -627,6 +647,10 @@ h3 {
 
 #contact .card:last-child p {
   font-size: calc(1.08rem + 4pt);
+}
+
+#contact .card:last-child li {
+  font-size: calc(1rem + 3pt);
 }
 
 /* ── Footer ── */
