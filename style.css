@@ -655,9 +655,9 @@ h3 {
 
 .support-logo {
   display: block;
-  max-width: 170px;
+  max-width: 510px;
   width: 100%;
-  margin: 0 0 1rem;
+  margin: 1rem 0 0;
 }
 
 /* ── Footer ── */
