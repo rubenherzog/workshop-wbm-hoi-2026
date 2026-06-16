@@ -653,6 +653,13 @@ h3 {
   font-size: calc(1rem + 3pt);
 }
 
+.support-logo {
+  display: block;
+  max-width: 170px;
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
 /* ── Footer ── */
 
 .site-footer {
