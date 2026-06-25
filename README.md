@@ -34,10 +34,6 @@ This workshop brings together whole-brain modelling, machine learning, and high-
 
 **Four days, 10:00–18:30**  
 For full details, please visit: https://rubenherzog.github.io/workshop-wbm-hoi-2026/
-## 🗓️ Programme
-
-**Four days, 10:00–18:30**  
-For full details, please visit: https://rubenherzog.github.io/workshop-wbm-hoi-2026/
 
 | Time | Tue 17 Nov | Wed 18 Nov | Thu 19 Nov | Fri 20 Nov |
 |---|---|---|---|---|
@@ -51,6 +47,4 @@ For full details, please visit: https://rubenherzog.github.io/workshop-wbm-hoi-2
 | 15:30–16:30 | **Joana Cabral**<br>Opening Tutorial: hands-on<br>Beyond networks: functional connectivity as eigenmode resonance | **Xiaoge Bao**<br>Tutorial: hands-on<br>Propagation of perturbations in brain networks | **Rubén Herzog**<br>Tutorial: hands-on<br>HOI-based digital twins | **Proposal presentations** |
 | 16:30–17:00 | **Flash talks** | **Flash talks** | **Flash talks** | **Proposal presentations** |
 | 17:00–18:30 | ☕ Coffee & Posters | ☕ Coffee & Posters | ☕ Coffee & Posters | 🥂 Farewell cocktail |
-| 17:00–18:30 | ☕ Coffee & Posters | ☕ Coffee & Posters | ☕ Coffee & Posters | 🥂 Farewell cocktail |
-```
 
